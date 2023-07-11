@@ -7,8 +7,7 @@
     public string DescricaoResumida => 
         $"A música {Nome} pertence à banda {Artista}";
 
-
-
+    public Genero Genero { get; set; }
 
     public void ExibirFichaTecnica()
     {
