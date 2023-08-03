@@ -1,18 +1,24 @@
 ﻿class Musica
 {
-    public string Nome { get; set; }
-    public string Artista { get; set; }
+    public Musica(Banda banda, string nome, bool disponivel) {
+        Banda = banda;
+        Nome = nome;
+        Disponivel = disponivel;
+    }
+
+    public string Nome { get; }
+    public Banda Banda { get; }
     public int Duracao { get; set; }
-    public bool Disponivel { get; set; }
+    public bool Disponivel { get; }
     public string DescricaoResumida => 
-        $"A música {Nome} pertence à banda {Artista}";
+        $"A música {Nome} pertence à banda {Banda}";
 
     public Genero Genero { get; set; }
 
     public void ExibirFichaTecnica()
     {
         Console.WriteLine($"Nome: {Nome}");
-        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Banda: {Banda.Nome}");
         Console.WriteLine($"Duração: {Duracao}");
         if (Disponivel)
         {
