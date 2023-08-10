@@ -27,17 +27,11 @@ Podcast psicologiaNaPratica = new Podcast("Psicologia na prática", "Alana Anija
 Episodio episodio1 = new Episodio("Transtorno de ansiedade", 1, 30);
 Episodio episodio2 = new Episodio("TDHA", 2, 30);
 
-Convidado convidado1 = new Convidado("Joana da Silva");
-episodio1.AdicionarConvidados(convidado1);
+episodio1.AdicionarConvidados("Joana da SIlva");
+episodio1.AdicionarConvidados("Joaquim da Silva");
 
-Convidado convidado2 = new Convidado("Joaquim da Silva");
-episodio1.AdicionarConvidados(convidado2);
-
-Convidado convidado3 = new Convidado("Paulo Mendes");
-episodio2.AdicionarConvidados(convidado3);
-
-Convidado convidado4 = new Convidado("Pedro Camargo");
-episodio2.AdicionarConvidados(convidado4);
+episodio2.AdicionarConvidados("Paulo Mendes");
+episodio2.AdicionarConvidados("Pedro Camargo");
 
 psicologiaNaPratica.AdicionarEpisodio(episodio1);
 psicologiaNaPratica.AdicionarEpisodio(episodio2);

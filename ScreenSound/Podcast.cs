@@ -21,9 +21,8 @@
         Console.WriteLine($"\n\nLista de episódios do podicast {Nome}: \n");
         foreach (var episodio in episodios.OrderBy(ep => ep.Ordem))
         {
-            Console.WriteLine($"\n\nEpisódio: {episodio.Título}");
+            Console.WriteLine($"\n\nEpisódio: {episodio.Titulo}");
             Console.WriteLine($"Resumo: {episodio.Resumo}");
-            episodio.MostrarConvidados();
         }
         Console.WriteLine($"\nEsse podcast possui: {TotalEpisodios} episódios");
     }
